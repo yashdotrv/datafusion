@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Testing &#8212; Apache DataFusion  documentation</title>
+    <title>Testing &#8212; Apache DataFusion main documentation</title>
   
   
   
@@ -30,7 +30,7 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=d08b24aa" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=543d738a" />
   
   <!-- So that users can add custom icons -->
   <script defer src="../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
@@ -38,10 +38,17 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
 
-    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/documentation_options.js?v=a8da1a53"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contributor-guide/testing';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.23.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/_static/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'main';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://datafusion.apache.org/contributor-guide/testing.html" />
     <link rel="icon" href="../_static/favicon.svg"/>
@@ -52,7 +59,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
+  <meta name="docsearch:version" content="main" />
   
     
     <script src="../_static/searchtools.js"></script>
@@ -124,8 +131,8 @@
       
     
     
-    <img src="../_static/original.svg" class="logo__image only-light" alt="Apache DataFusion  documentation - Home"/>
-    <img src="../_static/original_dark.svg" class="logo__image only-dark pst-js-only" alt="Apache DataFusion  documentation - Home"/>
+    <img src="../_static/original.svg" class="logo__image only-light" alt="Apache DataFusion main documentation - Home"/>
+    <img src="../_static/original_dark.svg" class="logo__image only-dark pst-js-only" alt="Apache DataFusion main documentation - Home"/>
   
   
 </a></div>
@@ -147,6 +154,26 @@
 </button>
         </div>
       
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
       
         <div class="navbar-item">
 
@@ -204,6 +231,26 @@
     
     
       <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
         
           <div class="navbar-item">
 
@@ -430,23 +477,10 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <!---
-  Licensed to the Apache Software Foundation (ASF) under one
-  or more contributor license agreements.  See the NOTICE file
-  distributed with this work for additional information
-  regarding copyright ownership.  The ASF licenses this file
-  to you under the Apache License, Version 2.0 (the
-  "License"); you may not use this file except in compliance
-  with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing,
-  software distributed under the License is distributed on an
-  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-  KIND, either express or implied.  See the License for the
-  specific language governing permissions and limitations
-  under the License.
+  <!--
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: See the NOTICE file distributed with this work for additional information regarding copyright ownership
+SPDX-FileContributor: Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements
 -->
 <section id="testing">
 <h1>Testing<a class="headerlink" href="#testing" title="Link to this heading">#</a></h1>
@@ -487,6 +521,24 @@ the Rust standard <a class="reference external" href="https://doc.rust-lang.org/
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cargo<span class="w"> </span>nextest<span class="w"> </span>run
 </pre></div>
 </div>
+<section id="code-coverage">
+<h3>Code coverage<a class="headerlink" href="#code-coverage" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://app.codecov.io/gh/apache/datafusion">Codecov</a> bot posts a coverage report on GitHub pull requests with:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">all-tests</span></code>: coverage from the workspace test suite.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sqllogictests</span></code>: coverage from SQLLogicTests alone.</p></li>
+</ul>
+<p>We <a class="reference internal" href="#choosing-what-kind-of-test-to-write">prefer end-to-end tests</a> because they are
+easier to maintain and verify final results through the full query pipeline,
+including optimizer passes. The SLT report helps ensure good coverage from these
+tests alone.</p>
+<p>Coverage helps find missing tests; high coverage does not guarantee good tests:</p>
+<ul class="simple">
+<li><p><strong>Do:</strong> Enumerate edge cases to build comprehensive tests, then check the
+coverage report for gaps.</p></li>
+<li><p><strong>Don’t:</strong> Use Codecov to choose a minimal set of tests that covers a new feature.</p></li>
+</ul>
+</section>
 </section>
 <section id="choosing-what-kind-of-test-to-write">
 <h2>Choosing What Kind of Test to Write<a class="headerlink" href="#choosing-what-kind-of-test-to-write" title="Link to this heading">#</a></h2>
@@ -749,6 +801,17 @@ for the tools it needs and the files it writes.</p>
 <p>A full list of benchmarks can be found <a class="reference external" href="https://github.com/apache/datafusion/tree/main/datafusion/core/benches">here</a>.</p>
 <p><em><a class="reference external" href="https://github.com/bheisler/cargo-criterion">cargo-criterion</a> may also be used for more advanced reporting.</em></p>
 </section>
+<section id="microbenchmark-health-checks-local-only">
+<h3>Microbenchmark health checks (local-only)<a class="headerlink" href="#microbenchmark-health-checks-local-only" title="Link to this heading">#</a></h3>
+<p>Runs each microbenchmark case once to catch runtime panics, without measuring performance:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cargo<span class="w"> </span>xtask<span class="w"> </span>ci<span class="w"> </span>step<span class="w"> </span><span class="nb">test</span><span class="w"> </span>microbenchmarks
+</pre></div>
+</div>
+<p>The suite took about 10 minutes in CI, so execution is local-only, including on
+release branches; no hosted workflow or required check is provided. Runtime failures
+may go unnoticed until a local run. When changing benchmark fixtures, setup, or APIs,
+run the affected benchmarks and include the commands and results in your PR.</p>
+</section>
 <section id="parquet-sql-benchmarks">
 <h3>Parquet SQL Benchmarks<a class="headerlink" href="#parquet-sql-benchmarks" title="Link to this heading">#</a></h3>
 <p>The parquet SQL benchmarks can be run with</p>
@@ -830,7 +893,10 @@ for the tools it needs and the files it writes.</p>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-quick-start">Testing Quick Start</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-overview">Testing Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-overview">Testing Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-coverage">Code coverage</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-what-kind-of-test-to-write">Choosing What Kind of Test to Write</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-tests">Unit tests</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sqllogictests-tests">sqllogictests Tests</a></li>
@@ -854,6 +920,7 @@ for the tools it needs and the files it writes.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-html-build">Documentation HTML Build</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmarks">Benchmarks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criterion-benchmarks">Criterion Benchmarks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microbenchmark-health-checks-local-only">Microbenchmark health checks (local-only)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parquet-sql-benchmarks">Parquet SQL Benchmarks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-baselines">Comparing Baselines</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upstream-benchmark-suites">Upstream Benchmark Suites</a></li>
